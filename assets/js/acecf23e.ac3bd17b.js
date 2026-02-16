@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkflex_bans_wiki=globalThis.webpackChunkflex_bans_wiki||[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/FlexBansWiki/blog","blogTitle":"Blog","authorsListPath":"/FlexBansWiki/blog/authors"}')}}]);
