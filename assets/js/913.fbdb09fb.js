@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkflex_bans_wiki=globalThis.webpackChunkflex_bans_wiki||[]).push([[913],{8913(i,s,a){a.r(s)}}]);
