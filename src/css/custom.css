@@ -1,30 +1,100 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #ffa600;
+  --ifm-color-primary-dark: #e69500;
+  --ifm-color-primary-darker: #d98d00;
+  --ifm-color-primary-darkest: #b37400;
+  --ifm-color-primary-light: #ffb429;
+  --ifm-color-primary-lighter: #ffbc3d;
+  --ifm-color-primary-lightest: #ffd04e;
+
+  --ifm-code-font-size: 95%; 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --theme-gradient: linear-gradient(90deg, #ffa600 0%, #ffd04e 100%);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #ffb429;
+  --ifm-color-primary-dark: #e6a024;
+  --ifm-color-primary-darker: #d99622;
+  --ifm-color-primary-darkest: #b87d1c;
+  --ifm-color-primary-light: #ffc24a;
+  --ifm-color-primary-lighter: #ffca5e;
+  --ifm-color-primary-lightest: #ffd04e;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --theme-gradient: linear-gradient(90deg, #ffb429 0%, #ffd04e 100%);
+
+  --ifm-footer-background-color: #131313;
+}
+
+
+[data-theme='light'] .DocSearch {
+  --docsearch-primary-color: var(--ifm-color-primary) !important;
+  --docsearch-highlight-color: var(--ifm-color-primary) !important;
+  
+  --docsearch-icon-color: var(--ifm-color-primary) !important;
+  
+  --docsearch-container-background: rgba(0, 0, 0, 0.5);
+  --docsearch-modal-background: #ffffff;
+  --docsearch-searchbox-background: #f0f0f2;
+  --docsearch-searchbox-focus-background: #ffffff;
+  
+  --docsearch-hit-active-color: #000;
+  --docsearch-hit-background: #fff;
+  
+  --docsearch-footer-background: #ffffff;
+  --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8;
+}
+[data-theme='dark'] .DocSearch {
+  --docsearch-primary-color: var(--ifm-color-primary);
+  --docsearch-highlight-color: var(--ifm-color-primary);
+  --docsearch-icon-color: var(--ifm-color-primary);
+
+  --docsearch-subtle-color: none;
+  --docsearch-searchbox-background: #141414;
+  --docsearch-search-button-background: #1d1d1d;
+  --docsearch-key-color: #ffffff;
+  --docsearch-key-background: #161616;
+  --docsearch-searchbox-focus-background: #141414;
+  --docsearch-searchbox-shadow: none;
+    
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  --docsearch-hit-active-color: #000;
+  --docsearch-hit-active-background: var(--ifm-color-primary-darkest);
+
+  --docsearch-footer-background: #1b1b1d;
+  --docsearch-footer-shadow: none;
+}
+
+.DocSearch-Button {
+    border-radius: 90px !important;
+}
+
+.DocSearch-Form {
+    border-radius: 30px 30px 0 0 !important;
+}
+
+.DocSearch-Modal {
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.DocSearch-Footer {
+    border-radius: 0 0 30px 30px !important;
+}
+
+.DocSearch-Commands-Key {
+    background-color: #161616 !important;
+}
+
+.navbar__icon {
+    font-size: 1.3rem;
+}
+
+.toggleButton_gllP:hover {
+    background: none !important;
+    color: var(--ifm-color-primary)
 }
